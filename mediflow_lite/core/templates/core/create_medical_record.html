@@ -1,0 +1,14 @@
+<form method="POST">
+    {% csrf_token %}
+    <label for="doctor_id">Select Doctor:</label>
+    <select name="doctor_id" required>
+        {% for doctor in doctors %}
+            <option value="{{ doctor.id }}">{{ doctor.user.username }}</option>
+        {% endfor %}
+    </select>
+    <label for="notes">Notes:</label>
+    <textarea name="notes" required></textarea>
+    <label for="prescription">Prescription:</label>
+    <textarea name="prescription"></textarea>
+    <button type="submit">Create Medical Record</button>
+</form>

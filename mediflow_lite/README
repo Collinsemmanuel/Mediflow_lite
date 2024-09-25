@@ -1,0 +1,44 @@
+# MediFlow Lite 🏥🤖
+
+MediFlow Lite is a medical chatbot application that integrates a fine-tuned Ollama model to provide health advice, manage appointments, and handle medical records. Built using Django for the backend and Chainlit for the frontend, this application aims to enhance patient-doctor interactions through AI-driven insights.
+
+## Features ✨
+
+- User authentication and session management
+- Real-time health advice from a fine-tuned Ollama model
+- Appointment scheduling and management
+- Medical record creation and retrieval
+- User-friendly interface powered by Chainlit
+
+## Technologies Used 🛠️
+
+- **Backend**: Django, Django REST Framework
+- **Frontend**: Chainlit
+- **AI Model**: Ollama (fine-tuned for medical inquiries)
+- **Database**: SQLite (or any other database of your choice)
+- **Containerization**: Docker
+
+## Installation 📦
+
+### Prerequisites
+
+- Python 3.9 or higher
+- Docker
+- Ollama installed on your machine
+
+### Clone the Repository
+
+git clone https://github.com/Collinsemmanuel/mediflow-lite.git
+
+
+### Set Up the Backend
+
+1. Navigate to the `api` directory and install the required packages:
+
+bash
+cd api
+pip install -r requirements.txt
+
+
+2. Run database migrations:
+python manage.py migrate
